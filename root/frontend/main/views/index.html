@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS meta tags -->
+    <link rel="stylesheet" href="/root/frontend/custom/css/styles.css" />
+
+    <title>Calculadora de Gorjeta</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <div>
+          <h1>Calculadora de Gorjeta</h1>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="main">
+        <div class="calculator">
+          <form action="">
+            <fieldset>
+              <legend>Quanto ficou a conta?</legend>
+              <label for="bill">
+                <p>R$<input type="number" name="Value" id="value" /></p>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Como você avalia o nosso serviço?</legend>
+              <label for="serviceQual">
+                <select name="serviceQual" id="serviceQual">
+                  <option disabled selected>Escolha uma opção abaico</option>
+                  <option value="0.3">Serviço Otimo - 20%</option>
+                  <option value="0.15">Serviço Bom - 15%</option>
+                  <option value="0.05">Serviço Ok - 5%</option>
+                  <option value="0">Serviço Ruim - 0%</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Com quantas pessoas sera dividida a conta?</legend>
+              <label for="split">
+                <input type="number" name="split" />
+              </label>
+            </fieldset>
+            <button type="submit">Calcular</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
