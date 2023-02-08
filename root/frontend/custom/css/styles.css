@@ -52,7 +52,7 @@ body {
 }
 .formSelect:focus{
   border: 3px solid var(--main-bg-color);
-  transition: .5s;
+  transition: .2s;
   border-radius: 2px;
   outline: none;
 }
