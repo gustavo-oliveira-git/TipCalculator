@@ -4,48 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS meta tags -->
-    <link rel="stylesheet" href="/root/frontend/custom/css/styles.css" />
-
     <title>Calculadora de Gorjeta</title>
+
+    <!-- CSS Tags -->
+    <link rel="stylesheet" href="/root/frontend/custom/css/styles.css" />
   </head>
   <body>
-    <header>
-      <section>
-        <div>
-          <h1>Calculadora de Gorjeta</h1>
-        </div>
-      </section>
-    </header>
-    <main>
+    <main id="container">
       <section class="main">
         <div class="calculator">
-          <form action="">
-            <fieldset>
-              <legend>Quanto ficou a conta?</legend>
-              <label for="bill">
-                <p>R$<input type="number" name="Value" id="value" /></p>
-              </label>
-            </fieldset>
-            <fieldset>
-              <legend>Como você avalia o nosso serviço?</legend>
-              <label for="serviceQual">
-                <select name="serviceQual" id="serviceQual">
-                  <option disabled selected>Escolha uma opção abaico</option>
-                  <option value="0.3">Serviço Otimo - 20%</option>
-                  <option value="0.15">Serviço Bom - 15%</option>
-                  <option value="0.05">Serviço Ok - 5%</option>
-                  <option value="0">Serviço Ruim - 0%</option>
-                </select>
-              </label>
-            </fieldset>
-            <fieldset>
-              <legend>Com quantas pessoas sera dividida a conta?</legend>
-              <label for="split">
-                <input type="number" name="split" />
-              </label>
-            </fieldset>
-            <button type="submit">Calcular</button>
+          <h1 class="title">Calculadora de Gorjeta</h1>
+          <form action="" class="tipsForm">
+            <label for="bill">
+              <p>Quanto ficou a conta?</p>
+              R$<input type="number" name="Value" id="value" class="formInput" />
+            </label>
+            <label for="serviceQual">
+              <p>Como foi o seu serviço?</p>
+              <select name="serviceQual" id="serviceQual" class="formSelect">
+                <option disabled selected>Escolha uma opção abaixo</option>
+                <option value="0.3">Serviço Otimo - 20%</option>
+                <option value="0.15">Serviço Bom - 15%</option>
+                <option value="0.05">Serviço Ok - 5%</option>
+                <option value="0">Serviço Ruim - 0%</option>
+              </select>
+            </label>
+            <label for="split">
+              <p>Com quantas pessoas a conta será divida?</p>
+              <input type="number" name="split"  class="formInput"/>pessoas!
+            </label>
+            <p>
+              <button type="submit" class="formSubmit">Calcular</button>
+            </p>
           </form>
         </div>
       </section>
