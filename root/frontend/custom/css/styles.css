@@ -10,12 +10,8 @@ body {
   font-size: 15px;
   font-family: Lato, sans-serif;
 }
-/* label p{
-  border-bottom: 2px solid black;
-} */
 #container {
   height: 525px;
-  /* width: 360px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +29,6 @@ body {
   text-align: center;
 }
 .calculator {
-  /* padding: .6em; */
   background-color: var(--calculator-bg-color);
   box-shadow: 3px 3px 3px;
   border-radius: 20px;
