@@ -11,7 +11,6 @@ body {
   font-family: Lato, sans-serif;
 }
 #container {
-  height: 525px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,4 +69,11 @@ body {
 .formSubmit:hover{
   background-color: var(--main-bg-color);
   transition: .2s;
+}
+
+#totalTip{
+  font-size: 1.5em;
+  margin-top: 2em;
+  border-top: 3px solid black;
+  text-align: center;
 }

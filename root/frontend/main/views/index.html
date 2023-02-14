@@ -14,16 +14,22 @@
       <section class="main">
         <div class="calculator">
           <h1 class="title">Calculadora de Gorjeta</h1>
-          <form action="" class="tipsForm">
+          <form class="tipsForm" id="tipsForm">
             <label for="bill">
               <p>Quanto ficou a conta?</p>
-              R$<input type="number" name="Value" id="value" class="formInput" />
+              R$<input
+                type="number"
+                name="Value"
+                id="value"
+                class="formInput"
+                required
+              />
             </label>
             <label for="serviceQual">
               <p>Como foi o seu serviço?</p>
               <select name="serviceQual" id="serviceQual" class="formSelect">
                 <option disabled selected>Escolha uma opção abaixo</option>
-                <option value="0.3">Serviço Otimo - 20%</option>
+                <option value="0.20">Serviço Otimo - 20%</option>
                 <option value="0.15">Serviço Bom - 15%</option>
                 <option value="0.05">Serviço Ok - 5%</option>
                 <option value="0">Serviço Ruim - 0%</option>
@@ -31,16 +37,31 @@
             </label>
             <label for="split">
               <p>Com quantas pessoas a conta será divida?</p>
-              <input type="number" name="split"  class="formInput"/>pessoas!
+              <input
+                type="number"
+                name="split"
+                id="people"
+                class="formInput"
+                required
+              />pessoas!
             </label>
             <p>
-              <button type="submit" class="formSubmit">Calcular</button>
+              <button type="submit" class="formSubmit" onclick="Calculate">
+                Calcular
+              </button>
             </p>
+            <div id="totalTip">
+              <p>Gorjeta total:</p>
+              <p>R$<span id="tip">0.00</span></p>
+              <p>
+                dividido para <span id="each"></span>pessoas
+              </p>
+            </div>
           </form>
         </div>
       </section>
     </main>
     <footer></footer>
+    <script src="/root/backend/js/script.js"></script>
   </body>
 </html>
-
